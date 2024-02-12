@@ -1,0 +1,40 @@
+<div class="container">
+    <section class="left-sd">
+        <img src="/assets/logo.png" alt="Logo" class="logo">
+    </section>
+    <ng-container *ngIf="router.routerState.snapshot.url !== '/pass'">
+        <section class="right-sd">
+            <p class="title">Simples, rápido e eficiente!</p>
+            <p class="text">O Auditor NFe realiza todo o suporte fiscal e gestão de NFes que sua empresa necessita. Entre agora com seu e-mail e senha.</p>
+            <form action="" class="login">
+                <label for="email">E-mail</label>
+                <input type="email" class="login-input" placeholder="Digite o e-mail">
+                <label for="senha">Senha</label>
+                <input type="password" class="login-input" placeholder="Digite a senha">
+                <a href="" routerLink="/pass" routerLinkActive="active" class="recover-bt"><p>Esqueci a senha</p></a>
+                <input type="submit" value="ENTRAR" class="login-bt"/>
+            </form>
+            <div class="social">
+                <a href="#" class="social-bt"><img src="assets/linkedin.png" alt=""></a>
+                <a href="#" class="social-bt"><img src="assets/facebook.png" alt=""></a>
+                <a href="#" class="social-bt"><img src="assets/instagram.png" alt=""></a>
+                <a href="#" class="social-bt"><img src="assets/wpp.png" alt=""></a>
+            </div>
+            <p class="rights"><span style="color: #1d4f94;">© Auditor NFe 2023</span> - Todos os direitos reservados</p>
+        </section>
+    </ng-container>
+    <ng-container *ngIf="router.routerState.snapshot.url == '/pass'">
+    <section class="right-sd">
+        <p class="title">Esqueceu sua senha?</p>
+        <p class="text-pass">Informe seu e-mail abaixo e enviaremos um link para você cadastrar uma nova senha</p>
+        <form action="" class="passwordReset">
+            <label for="email">E-mail</label>
+            <input type="email" class="email-input" placeholder="Digite o e-mail">
+            <div class="buttons">
+                <input type="submit" routerLink="/login" routerLinkActive="active" value="RECUPERAR SENHA" class="reset-bt-pass"/>
+                <button class="login-bt-pass" routerLink="/login" routerLinkActive="active">ENTRAR</button>
+            </div>    
+        </form>
+    </section>
+    </ng-container>
+</div>

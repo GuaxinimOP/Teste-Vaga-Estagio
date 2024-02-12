@@ -1,0 +1,213 @@
+@media only screen and (min-width: 768px) {
+    :root{
+        --DarkBlue: #1d4f94;
+        --Grey: #d4d4d4;
+    }
+
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: verdana;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 1rem;
+    }
+
+    .logo{
+        filter: grayscale(1);
+        max-width: 50vw;
+        width: 50%;
+    }
+
+    .title{
+        align-self: center;
+        font-weight: bold;
+        font-size: x-large;
+        color: var(--DarkBlue);
+    }
+
+    .text{
+        font-size: 16px;
+        align-self: center;
+        text-align: center;
+        width: 70%;
+    }
+
+    .login{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 60%;
+    }
+
+    input, button{
+        width: 97%;
+        height: 2rem;
+        border: 1px solid var(--Grey);
+        border-radius: 5px;
+        padding: 1%;
+    }
+
+    .recover-bt{
+        text-decoration: underline;
+        font-size: small;
+        font-weight: bold;
+        color: var(--DarkBlue);
+    }
+
+    .login > label{
+        margin: 1%;
+        font-weight: bold;
+        font-size: small;
+        align-self: normal;
+    }
+
+    .login-bt{
+        align-self: center;
+        background-color: var(--DarkBlue);
+        color: #FFFFFF;
+        border: 0px solid;
+        height: 3em;
+        border-radius: 3px;
+    }
+
+    .social{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        height: 25%;
+        gap: 5%;
+    }
+
+    .social-bt > img{
+        max-width: 25px;
+        max-height: 25px;
+        padding: 15px;
+        border-radius: 10%;
+        border: 1px solid var(--Grey);
+    }
+
+    .rights{
+        text-align: center;
+        font-size: small;
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+
+    :root{
+        --DarkBlue: #1d4f94;
+        --Grey: #d4d4d4;
+    }
+
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: verdana;
+    }
+
+    .container{
+        width: 100vw;
+        height: 9vh;
+        display: grid;
+        grid-template-rows: 10vw 95vw;
+    }
+
+    .left-sd{
+        background-color: var(--DarkBlue);
+        display: flex;
+    }
+
+    .logo{
+        filter: grayscale(1);
+        max-width: 30vw;
+        width: 25%;
+        padding: 1%;
+        align-self: normal;
+    }
+
+    .right-sd{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .title{
+        align-self: center;
+        font-weight: bold;
+        font-size: x-large;
+        color: var(--DarkBlue);
+    }
+
+    .text{
+        font-size: 16px;
+        align-self: center;
+        width: 70%;
+    }
+
+    .login{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        align-self: center;
+        width: 70%;
+    }
+
+    input, button{
+        width: 97%;
+        height: 2rem;
+        border: 1px solid var(--Grey);
+        border-radius: 5px;
+        padding: 1%;
+    }
+
+    .recover-bt{
+        text-decoration: underline;
+        font-size: small;
+        font-weight: bold;
+        color: var(--DarkBlue);
+    }
+
+    .login > label{
+        margin: 1%;
+        font-weight: bold;
+        font-size: small;
+        align-self: normal;
+    }
+
+    .login-bt{
+        align-self: center;
+        background-color: var(--DarkBlue);
+        color: #FFFFFF;
+        border: 0px solid;
+        height: 3em;
+        border-radius: 3px;
+        margin-bottom: 3%;
+    }
+
+    .social{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        height: 30vh;
+        gap: 5%;
+    }
+
+    .social-bt > img{
+        max-width: 20px;
+        max-height: 20px;
+        padding: 15px;
+        border-radius: 10%;
+        border: 1px solid var(--Grey);
+    }
+
+    .rights{
+        text-align: center;
+        font-size: small;
+        width: 100%;
+    }
+}

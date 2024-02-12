@@ -1,0 +1,164 @@
+@media only screen and (min-width: 768px) {
+    :root{
+        --DarkBlue: #1d4f94;
+        --Grey: #d4d4d4;
+    }
+
+    .left-sd{
+        border-radius: 15px;
+        background-color: var(--DarkBlue);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: calc(100vh - 32px);
+    }
+
+    .right-sd{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: calc(100vh - 32px);
+    }
+
+    .text-pass{
+        font-size: 16px;
+        align-self: center;
+        text-align: center;
+        width: 60%;
+    }
+
+    .passwordReset{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 60%;
+    }
+
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        width: 100%;
+        height: 30vh;
+    }
+
+    .recover-bt{
+        text-decoration: underline;
+        font-size: small;
+        font-weight: bold;
+        color: var(--DarkBlue);
+    }
+
+    .passwordReset > label{
+        margin: 1%;
+        font-weight: bold;
+        font-size: small;
+        align-self: normal;
+    }
+
+    .reset-bt-pass{
+        align-self: center;
+        background-color: var(--DarkBlue);
+        color: #FFFFFF;
+        border: 0px solid;
+        height: 3em;
+        border-radius: 3px;
+    }
+
+    .login-bt-pass{
+        align-self: center;
+        background-color: #FFF;
+        color: var(--DarkBlue);
+        border: 1px solid var(--DarkBlue);
+        border-radius: 3px;
+        height: 3em;
+        font-weight: bold;
+    }
+
+    .login-bt-pass > a{
+        text-decoration: none;
+        color: var(--DarkBlue);
+    }
+
+}
+
+@media (max-width: 767px) {
+    :root{
+        --DarkBlue: #1d4f94;
+        --Grey: #d4d4d4;
+    }
+
+    .left-sd{
+        background-color: var(--DarkBlue);
+        display: flex;
+    }
+
+    .right-sd{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .passwordReset{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        align-self: center;
+        width: 70%;
+    }
+
+    .text-pass{
+        font-size: 14px;
+        align-self: center;
+        width: 70%;
+    }
+
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        width: 100%;
+        height: 40vh;
+    }
+
+    .recover-bt{
+        text-decoration: underline;
+        font-size: small;
+        font-weight: bold;
+        color: var(--DarkBlue);
+    }
+
+    .passwordReset > label{
+        margin: 1%;
+        font-weight: bold;
+        font-size: small;
+        align-self: normal;
+    }
+
+    .reset-bt-pass{
+        align-self: center;
+        background-color: var(--DarkBlue);
+        color: #FFFFFF;
+        border: 0px solid;
+        height: 3em;
+        border-radius: 3px;
+    }
+
+    .login-bt-pass{
+        align-self: center;
+        background-color: #FFF;
+        color: var(--DarkBlue);
+        border: 1px solid var(--DarkBlue);
+        height: 3em;
+        border-radius: 3px;
+    }
+
+    .login-bt-pass > a{
+        text-decoration: none;
+        color: var(--DarkBlue);
+    }
+}
